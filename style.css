@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.bg-primary {
+    background: linear-gradient(98.14deg, #7025B2 9.77%, #662096 112.26%);
+}
+
+.bg-block {
+    background: linear-gradient(98deg, #762ECF 9.77%, #3733DF 112.26%);
+}
+
+.bg-main {
+    background: linear-gradient(93.5deg, #7628C2 9.15%, #2E15D5 42.99%, rgba(44, 24, 245, 0) 76.44%), url("./imgs/bg-main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-sm {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container-sm {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container-sm {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container-sm {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container-sm {
+        width: 1270px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-sm {
+        width: 1370px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container-sm {
+        width: 1470px;
+    }
+}

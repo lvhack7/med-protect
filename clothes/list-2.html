@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container-sm py-6">
+        <nav class="flex items-center justify-between">
+            <a href="../index.html" class="flex hover:cursor-pointer">
+                <img src="../imgs/logo.png" width="200">
+            </a>
+            <div class="hidden xl:flex items-center justify-between lg:space-x-6 xl:space-x-16">
+                <a href="../catalog.html" class="text-gray-700 hover:underline hover:cursor-pointer">Каталог</a>
+                <a href="../index.html#about" class="text-gray-700 hover:underline hover:cursor-pointer">О Компании</a>
+                <a href="../delivery.html" class="text-gray-700 hover:underline hover:cursor-pointer">Доставка и оплата</a>
+                <a href="../contacts.html" class="text-gray-700 hover:underline hover:cursor-pointer">Контакты</a>
+            </div>
+            <div class="hidden xl:flex items-center justify-between space-x-4">
+                <div class="flex items-center space-x-3">
+                    <img src="../imgs/telegramm.svg" width="25">
+                    <img src="../imgs/watsapp.svg" width="25">
+                    <img src="../imgs/instagramm.svg" width="25">
+                </div>
+                <a class="text-sm" href="tel:+77003007212">+7 700 300 72 12</a>
+                <a href="tel:+77003007212" class="bg-[#8020DE] px-8 text-white rounded-xl py-3 text-sm hover:bg-[#6D23A9]">Заказать звонок</a>
+            </div>
+            <div class="xl:hidden">
+                <img onclick="toggleMenu()" src="../imgs/menu-icon.svg" width="35" >
+            </div>
+        </nav>
+        <div class="flex items-center space-x-6 justify-between mt-6 md:px-12">
+            <div class="flex flex-grow items-center bg-gray-100 rounded-xl space-x-2 px-6 py-3">
+                <img src="../imgs/search-icon.svg" width="20" >
+                <input 
+                    type="text"
+                    class="bg-transparent text-sm borer-0 focus:outline-none"
+                >
+            </div>
+            <button class="hover:bg-[#6D23A9] hover:text-white border text-xs md:text-base rounded-xl border-[#6D23A9] text-[#6D23A9] px-4 md:px-6 py-2">
+                Найти в каталоге
+            </button>
+        </div>
+    </header>
+
+    <section class="container-sm py-10">
+        <p class="text-gray-400 text-sm mb-12">Главная / Каталог</p>
+        <p class="text-4xl font-semibold mb-12">Каталог</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="col-span-1">
+                <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-4">
+                        <div data-dropdown="d1" class="bg-[#EEDDFF] rounded-xl px-8 py-3">
+                            <a href="../construction/index.html" class="flex items-center justify-between text-sm hover:underline hover:cursor-pointer">
+                                Рентгенозащитные конструкции <img class="ml-2 mt-1" src="../imgs/arrow-down.svg" width="10" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <div data-dropdown="d2" class="bg-[#8020DE] text-white rounded-xl px-8 py-3">
+                            <a href="./index.html" class="flex items-center justify-between text-sm hover:underline hover:cursor-pointer">
+                                Рентгенозащитная одежда <img class="ml-2 mt-1" src="../imgs/arrow-up-white.svg" width="10" >
+                            </a>
+                        </div>
+                        <div id="d2" class="flex flex-col space-y-4 px-4">
+                            <a href="./personal.html" class="text-sm text-gray-700 hover:cursor-pointer hover:text-[#8020DE]">Для персонала</a>
+                            <a href="./patient.html" class="text-sm text-gray-700 hover:cursor-pointer hover:text-[#8020DE]">Для пациентов </a>
+                            <a href="./children.html" class="text-sm text-gray-700 hover:cursor-pointer hover:text-[#8020DE]">Детская</a>
+                            <a href="./pediatric.html" class="text-sm text-gray-700 hover:cursor-pointer hover:text-[#8020DE]">Набор для микропедиатрии</a>
+                            <a href="./list.html" class="text-sm hover:cursor-pointer text-[#8020DE]">Пластины</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <div data-dropdown="d3" class="bg-[#EEDDFF] rounded-xl px-8 py-3">
+                            <a href="../materials/index.html" class="flex items-center justify-between text-sm hover:underline hover:cursor-pointer">
+                                Рентгенозащитные материалы <img class="ml-2 mt-1" src="../imgs/arrow-down.svg" width="10" >
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="flex flex-col">
+                    <p class="font-semibold text-2xl mb-8">Фартук рентгенозащитный  односторонний ПОЛЮС ФРЗО-Л, эквивалент Pb 0.25 мм </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                        <div class="col-span-1">
+                            <img class="rounded-xl" src="../imgs/products/clothes.png">
+                        </div>
+                        <div class="col-span-2 py-2">
+                            <p class="text-gray-600 text-sm mb-4">
+                                Односторонний рентгенозащитный фартук сводит к минимуму негативное воздействие рассеянного рентгеновского излучения. Фартук обеспечивает защиту передней части тела медперсонала, а за счет грамотного распределения веса – комфортность в использовании. Свинцовый эквивалент: Pb 0,25 мм.
+                            </p>
+                            <p class="text-gray-600 text-sm mb-4">Размеры:</p>
+                            <div class="flex items-center space-x-4 text-gray-600 text-sm">
+                                <p>SM (42-44);</p>
+                                <p>ММ (46-54);</p>
+                                <p>LM (56-60).</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                    <div class="text-gray-700 text-sm py-8 max-w-[500px]">
+                        Для заказа изделия заполните, пожалуйста, форму и отправьте запрос. Наши менеджеры свяжутся с Вами для уточнения деталей.
+                    </div>
+                    <form class="flex flex-col space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col">
+                                <label class="text-sm mb-2">Имя и фамилия*</label>
+                                <input
+                                    type="text"
+                                    required
+                                    class="border border-gray-400 px-5 py-3 rounded-lg text-gray-600 focus:outline-none"
+                                    placeholder="Введите Ваше Имя и Фамилию"
+                                />
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-sm mb-2">Номер телефона*</label>
+                                <input
+                                    type="tel"
+                                    required
+                                    class="border border-gray-400 px-5 py-3 rounded-lg text-gray-600 focus:outline-none"
+                                    placeholder="Введите Ваше номер телефона"
+                                />
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                            <div class="flex flex-col">
+                                <label class="text-sm mb-2">Email</label>
+                                <input
+                                    type="email"
+                                    class="border border-gray-400 px-5 py-3 rounded-lg text-gray-600 focus:outline-none"
+                                    placeholder="Введите Ваш адрес электронной почты"
+                                />
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-sm mb-2">Наименование организации</label>
+                                <input
+                                    type="tel"
+                                    required
+                                    class="border border-gray-400 px-5 py-3 rounded-lg text-gray-600 focus:outline-none"
+                                    placeholder="Введите юридическое название компании"
+                                />
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-sm mb-2">Комментарий</label>
+                            <textarea
+                                rows="4"
+                                required
+                                class="border border-gray-400 px-5 py-4 rounded-lg text-gray-600 focus:outline-none"
+                                placeholder="Введите текст"
+                            ></textarea>
+                        </div>
+                        <div class="flex justify-start">
+                            <button type="submit" class="bg-[#8020DE] text-white rounded-xl px-8 py-3">
+                                Отправить запрос
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-block mt-20">
+        <div class="container-sm py-10">
+            <div class="flex flex-wrap gap-10  items-start justify-between">
+                <div class="flex flex-col space-y-6">
+                    <img src="../imgs/logo-white.png" width="160">
+                    <p class="underline text-white text-lg">Связаться с нами</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="../imgs/telegramm.svg" width="30">
+                        <img src="../imgs/watsapp.svg" width="30">
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <a href="../catalog.html" class="text-white">Каталог</a>
+                    <a href="../index.html#about" class="text-white">О компании</a>
+                    <a href="../delivery.html" class="text-white">Доставка и оплата</a>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <a href="../construction/index.html" class="text-white">Рентгенозащитные конструкции</a>
+                    <a href="./index.html" class="text-white">Рентгенозащитная одежда</a>
+                    <a href="../materials/index.html" class="text-white">Рентгенозащитные материалы</a>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <a href="tel:+77003007212" class="text-white">+7 700 300 72 12</a>
+                    <img src="../imgs/instagramm.svg" width="30">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-gray-100 text-white px-12 py-6">
+        <div id="menu-close" class="flex justify-end p-4">
+            <button class="text-gray-800 text-5xl" onclick="toggleMenu()">
+                &times;
+            </button>
+        </div>
+        
+        <div class="flex flex-col">
+            <div class="flex flex-col space-y-6 mb-6">
+                <a href="../catalog.html" class="text-gray-700 hover:underline hover:cursor-pointer">Каталог</a>
+                <a href="../index.html#about" class="text-gray-700 hover:underline hover:cursor-pointer">О Компании</a>
+                <a href="../delivery.html" class="text-gray-700 hover:underline hover:cursor-pointer">Доставка и оплата</a>
+                <a href="../contacts.html" class="text-gray-700 hover:underline hover:cursor-pointer">Контакты</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <div class="flex items-center space-x-3 mb-2">
+                    <img src="../imgs/telegramm.svg" width="25">
+                    <img src="../imgs/watsapp.svg" width="25">
+                    <img src="../imgs/instagramm.svg" width="25">
+                </div>
+                <a class="text-sm text-black" href="tel:+77003007212">+7 700 300 72 12</a>
+                <a href="tel:+77003007212" class="bg-[#8020DE] px-8 text-white rounded-xl py-3 text-sm">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js" ></script>
+</body>
+</html>

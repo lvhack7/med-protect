@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container-sm py-6">
+        <nav class="flex items-center justify-between">
+            <a href="../index.html" class="flex hover:cursor-pointer">
+                <img src="../imgs/logo.png" width="200">
+            </a>
+            <div class="hidden xl:flex items-center justify-between lg:space-x-6 xl:space-x-16">
+                <a href="../catalog.html" class="text-gray-700 hover:underline hover:cursor-pointer">Каталог</a>
+                <a href="../index.html#about" class="text-gray-700 hover:underline hover:cursor-pointer">О Компании</a>
+                <a href="../delivery.html" class="text-gray-700 hover:underline hover:cursor-pointer">Доставка и оплата</a>
+                <a href="../contacts.html" class="text-gray-700 hover:underline hover:cursor-pointer">Контакты</a>
+            </div>
+            <div class="hidden xl:flex items-center justify-between space-x-4">
+                <div class="flex items-center space-x-3">
+                    <img src="../imgs/telegramm.svg" width="25">
+                    <img src="../imgs/watsapp.svg" width="25">
+                    <img src="../imgs/instagramm.svg" width="25">
+                </div>
+                <a class="text-sm" href="tel:+77003007212">+7 700 300 72 12</a>
+                <a href="tel:+77003007212" class="bg-[#8020DE] px-8 text-white rounded-xl py-3 text-sm hover:bg-[#6D23A9]">Заказать звонок</a>
+            </div>
+            <div class="xl:hidden">
+                <img onclick="toggleMenu()" src="../imgs/menu-icon.svg" width="35" >
+            </div>
+        </nav>
+        <div class="flex items-center space-x-6 justify-between mt-6 md:px-12">
+            <div class="flex flex-grow items-center bg-gray-100 rounded-xl space-x-2 px-6 py-3">
+                <img src="../imgs/search-icon.svg" width="20" >
+                <input 
+                    type="text"
+                    class="bg-transparent text-sm borer-0 focus:outline-none w-full"
+                >
+            </div>
+            <button class="hover:bg-[#6D23A9] hover:text-white border text-xs md:text-base rounded-xl border-[#6D23A9] text-[#6D23A9] px-4 md:px-6 py-2">
+                Найти в каталоге
+            </button>
+        </div>
+    </header>
+
+    <section class="container-sm py-10">
+        <p class="text-gray-400 text-sm mb-12">Главная / Каталог</p>
+        <p class="text-4xl font-semibold mb-12">Каталог</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="col-span-1">
+                <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-4">
+                        <div data-dropdown="d1" class="bg-[#EEDDFF] rounded-xl px-8 py-3">
+                            <a href="../construction/index.html" class="flex items-center justify-between text-sm hover:underline hover:cursor-pointer">
+                                Рентгенозащитные конструкции <img class="ml-2 mt-1" src="../imgs/arrow-down.svg" width="10" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <div data-dropdown="d2" class="bg-[#EEDDFF] rounded-xl px-8 py-3">
+                            <a href="../clothes/index.html" class="flex items-center justify-between text-sm hover:underline hover:cursor-pointer">
+                                Рентгенозащитная одежда <img class="ml-2 mt-1" src="../imgs/arrow-down.svg" width="10" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <div data-dropdown="d2" class="bg-[#8020DE] text-white rounded-xl px-8 py-3">
+                            <a href="./index.html" class="flex items-center justify-between text-sm hover:underline hover:cursor-pointer">
+                                Рентгенозащитная материалы <img class="ml-2 mt-1" src="../imgs/arrow-up-white.svg" width="10" >
+                            </a>
+                        </div>
+                        <div id="d3" class="flex flex-col space-y-4 px-4">
+                            <a href="./rubber.html" class="text-sm text-gray-700 hover:cursor-pointer hover:text-[#8020DE]">Рентгенозащитная резина</a>
+                            <a href="./list.html" class="text-sm text-gray-700 hover:cursor-pointer hover:text-[#8020DE]">Свинец листовой</a>
+                            <a href="./barit.html" class="text-sm hover:cursor-pointer text-[#8020DE]">Штукатурка баритовая, ровнитель</a>
+                            <a href="./panels.html" class="text-sm text-gray-700 hover:cursor-pointer hover:text-[#8020DE]">Рентгенозащитные панели</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="flex flex-col">
+                    <p class="font-semibold text-2xl mb-4">Баритовая штукатурка и ровнитель для пола баритовый</p>
+                    <p class="mb-8">В одной упаковке 40 мешков, 1 мешок = 25кг.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                        <div class="col-span-1">
+                            <img class="rounded-xl" src="../imgs/products/barit.png">
+                        </div>
+                        <div class="col-span-2 py-2">
+                            <p class="text-gray-600 text-sm">
+                                Баритовая штукатурка - это специальный вид штукатурки содержащий баритовый наполнитель, который обладает высокой плотностью и тяжестью. Баритовая штукатурка обычно используется для накладывания на внутренние и внешние поверхности, где требуется защита от радиации или для получения дополнительной звукоизоляции.
+                            </p>
+                            
+                            <p class="text-gray-600 text-sm">
+                                Если Вам необходимы рентгенозащитные ширмы, вы можете <a class="text-[#8020DE] underline">заказать</a> их с доставкой по Алматы, Казахстану и СНГ. Мы предлагаем широкий выбор ширм различной конфигурации и спецификации.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-3 mb-10">
+                        <div class="block text-sm">
+                            <p class="font-semibold">Описание</p>
+                            <p class="text-gray-600 mt-2">
+                                Сухая строительная смесь на основе цемента, концентрата барита молотого, модифицирована полимерными добавками, позволяющими повысить защитные и прочностные свойства, улучшить адгезию к основанию.
+                            </p>
+                        </div>
+                        <div class="block text-sm">
+                            <p class="font-semibold">Свойства</p>
+                            <p class="text-gray-600 mt-2">
+                                Смесь высокопрочная, высокопластичная, обладает высокой адгезией, влагостойкая. Благодаря своим физическим свойствам, баритовая штукатурка в состоянии задерживать гамма и близкое ему по спектру рентгеновское излучение. Смесь экологически безопасна. Удобна в применении.
+                            </p>
+                        </div>
+                        <div class="block text-sm">
+                            <p class="font-semibold">Назначение</p>
+                            <p class="text-gray-600 mt-2">
+                                Предназначена для зашиты от радиации. Применима при строительстве хранилищ радиоизотопных источников: баритовая штукатурка заменит дорогостоящую свинцовую защиту. Благодаря химической инертности барита смесь используют в гражданском строительстве, под покрытие отделочными материалами. В обязательном порядке применяется для отделки рентгеновских кабинетов — для безопасности пребывания людей в остальных помещениях медицинских учреждениях. Применение баритовой штукатурки при отделке внутренних помещений жилых и офисных объектов позволяет снизить внешнее воздействие естественного радиационного фона.
+                            </p>
+                        </div>
+                        <div class="block text-sm">
+                            <p class="font-semibold">Способ применения</p>
+                            <p class="text-gray-600 mt-2">
+                                Баритовая штукатурка наносится на перегородки слоями не более 10–12 мм каждый. На стену наносят грунтовку (не щелочную). Первый слой баритовой штукатурки наносится по штукатурной сетке, прикрепленной к стене дюбелями с шагом 250–300 мм. Последний слой выдерживают 2–3 сут., после чего шлифуют. Нельзя покрывать последний слой баритовой штукатурки эмалью ПФ 15.
+                            </p>
+                            <p class="text-gray-600 mt-2">
+                                Защитный слой баритовой штукатурки в перекрытиях необходимо завести в прилегающие помещения на 20–25 мм. По перекрытиям из ж/б плит слой изоляции баритовой штукатурки толщиной 60–65 мм, необходимо армировать двумя слоями арматурной сетки с ячейкой от 150х150 мм до 200х200 мм (ГОСТ 23279-85).
+                            </p>
+                        </div>
+                        <div class="block text-sm">
+                            <p class="font-semibold">Хранить</p>
+                            <p class="text-gray-600 mt-2">
+                                В сухом помещении в закрытой таре. Не менее 6 мес с момента изготовления.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 p-5">
+                        <p class="text-gray-700 text-lg mb-4">Технические характеристики</p>
+                        <table class="w-full">
+                            <!-- <tr>
+                                <th class="text-gray-600 font-normal text-sm text-center">Толщина листа (свинцовый эквивалент)</th>
+                                <th class="text-gray-600 font-normal text-sm text-center">Вес листа (кг)</th>
+                                
+                            </tr> -->
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Цвет
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        серый
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Связующее
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        цемент ПЦ500-Д0
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Наполнитель
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        баритовый концентрат ГОСТ 4862-74
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Минимальная толщина слоя
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        5 мм
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Максимальная толщина слоя
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        60 мм
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Расход сухой смеси на 1 м2 при толщине слоя 10 мм
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        22–22,5 кг
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Расход воды на 1 кг сухой смеси
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        0,21–0,25 л
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Время использования
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        не более 2 ч
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Прочность раствора на сжатие через 7 сут
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        17 МПа
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Морозостойкость
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        F50
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Время высыхания (в зависимости от толщины слоя)
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        8 ч
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Время полного набора прочности
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        28 сут
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3">
+                                    Плотность раствора, не менее
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 py-3">
+                                        2,7 г/см3
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="bg-gray-100 p-5 mt-8">
+                        <p class="text-lg mb-4">Стандартные проёмы</p>
+                        <table class="w-full">
+                            <tr>
+                                <th class="text-gray-600 font-normal text-center">Свинцовый эквивалент</th>
+                                <th class="text-gray-600 font-normal text-center">
+                                    Эквивалентная толщина штукатурки при напряжении на <br>рентгеновской трубке (кВ)
+                                </th>
+                                
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 pt-5 pb-3 border-b border-gray-400">
+                                    
+                                </td>
+                                <td class="flex items-center justify-between px-6">
+                                    <p class="text-center font-semibold text-xs text-gray-800 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        75 кВ
+                                    </p>
+                                    <p class="text-center font-semibold text-xs text-gray-800 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        100 кВ
+                                    </p>
+                                    <p class="text-center font-semibold text-xs text-gray-800 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        125 кВ
+                                    </p>
+                                    <p class="text-center font-semibold text-xs text-gray-800 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        150 кВ
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 pt-5 pb-3 border-b border-gray-400">
+                                    1 мм
+                                </td>
+                                <td class="flex items-center justify-between px-6">
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        18 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        20 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        20 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        25 мм
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 pt-5 pb-3 border-b border-gray-400">
+                                    2 мм
+                                </td>
+                                <td class="flex items-center justify-between px-6">
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        36 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        37 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        38 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        40 мм
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 pt-5 pb-3 border-b border-gray-400">
+                                    3 мм
+                                </td>
+                                <td class="flex items-center justify-between px-6">
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        60 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        65 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        68 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        68 мм
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 pt-5 pb-3 border-b border-gray-400">
+                                    4 мм
+                                </td>
+                                <td class="flex items-center justify-between px-6">
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        80 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        90 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        90 мм
+                                    </p>
+                                    <p class="text-center text-xs text-gray-600 pt-5 pb-3 px-10 border-b border-gray-400">
+                                        80 мм
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="flex flex-col py-10">
+                        <p class="text-2xl font-semibold mb-8">
+                            Ровнитель для пока баритовый
+                        </p>
+                        <div class="flex flex-col space-y-3 mb-10">
+                            <div class="block text-sm">
+                                <p class="font-semibold">Описание</p>
+                                <p class="text-gray-600 mt-2">
+                                    Высокоэффективная безусадочная смесь на основе цемента, концентрата барита молотого, модифицирована полимерными добавками, позволяющими повысить защитные и прочностные свойства, улучшить адгезию к основанию. При затворении водой образуется подвижный, не расслаивающийся состав.
+                                </p>
+                            </div>
+                            <div class="block text-sm">
+                                <p class="font-semibold">Свойства</p>
+                                <p class="text-gray-600 mt-2">
+                                    Обладает повышенной адгезией к бетонным основаниям, пластичностью. Материал водонепроницаем, долговечен, обладает прочностными характеристиками. Отлично растекается. Отсутствие расслоения, трещин в слое рабочей толщины. Благодаря своим физическим свойствам, ровнитель баритовый в состоянии задерживать гамма и близкое ему по спектру рентгеновское излучение. Смесь экологически безопасна.
+                                </p>
+                            </div>
+                            <div class="block text-sm">
+                                <p class="font-semibold">Назначение</p>
+                                <p class="text-gray-600 mt-2">
+                                    Ровнитель предназначен для зашиты от радиации. Применим для устройства высокопрочных, износостойких стяжек полов в качестве несущего слоя при строительстве хранилищ радиоизотопных источников: баритовый ровнитель заменит дорогостоящую свинцовую защиту. Подходит для выравнивания горизонтальных поверхностей под любое покрытие — керамическая плитка, керамогранит, линолеум, паркет и т. д. Благодаря химической инертности барита смесь используют в гражданском строительстве, под покрытие отделочными материалами. В обязательном порядке применяется для отделки рентгеновских кабинетов — для безопасности пребывания людей в остальных помещениях медицинских учреждениях. Применение баритового ровнителя при отделке внутренних помещений жилых и офисных объектов позволяет снизить внешнее воздействие естественного радиационного фона. Используется при производстве внутренних и наружных работ.
+                                </p>
+                            </div>
+                            <div class="block text-sm">
+                                <p class="font-semibold">Подготовка поверхности</p>
+                                <p class="text-gray-600 mt-2">
+                                    Основание должно быть прочным, очищенным от пыли, грязи, жиров, масел, битума, остатков краски и других веществ, ослабляющих прочность сцепления раствора с основанием. Поверхность рекомендуется обработать грунтовкой. Требует применения армирующей сетки.
+                                </p>
+                            </div>
+                            <div class="block text-sm">
+                                <p class="font-semibold">Способ применения</p>
+                                <p class="text-gray-600 mt-2">
+                                    Для приготовления раствора необходимо 1 кг сухой смеси, смещать с 0,18–0,20 л чистой воды, температурой 18–20° C, тщательно перемешать до получения однородной консистенции. Выдержать 5–7 мин, а затем повторно перемешать. Раствор готов к применению.
+<br>Рекомендуемая толщина слоя от 5 до 60 мм.
+<br>Приготовленная масса выливается вручную. Допускается механизированный способ заливки. При больших площадях рекомендуется разбить поверхность на квадраты размером 60х60 см и заливать квадраты в шахматном порядке. Если необходимо, поверхность выровнять с помощью широкого шпателя. Следует избегать сквозняков и попадания прямых солнечных лучей, особенно при укладке и в течение первых двух дней после этого. По истечении 24 ч возможно пешее хождение. Работы следует выполнять при температуре основания от 5° C до 30° C. Вышеизложенные рекомендации эффективны при температуре 20° C и относительной влажности воздуха 60%. При других условиях может измениться время высыхания и схватывания.
+                                </p>
+                                <p class="text-gray-600 mt-2">
+                                    Защитный слой баритовой штукатурки в перекрытиях необходимо завести в прилегающие помещения на 20–25 мм. По перекрытиям из ж/б плит слой изоляции баритовой штукатурки толщиной 60–65 мм, необходимо армировать двумя слоями арматурной сетки с ячейкой от 150х150 мм до 200х200 мм (ГОСТ 23279-85).
+                                </p>
+                            </div>
+                            <div class="block text-sm">
+                                <p class="font-semibold">Хранить</p>
+                                <p class="text-gray-600 mt-2">
+                                    В сухом помещении, в закрытой, неповреждённой фирменной упаковке, 6 мес со дня изготовления.
+                                </p>
+                            </div>
+                            <div class="block text-sm">
+                                <p class="font-semibold">Внимание</p>
+                                <p class="text-gray-600 mt-2">
+                                    Смесь содержит цемент. При работе использовать перчатки. При попадании в глаза немедленно промыть водой. Работы необходимо выполнять согласно инструкции по применению.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100 p-5">
+                        <p class="text-gray-700 text-lg mb-4">Технические характеристики</p>
+                        <table class="w-full">
+                            <!-- <tr>
+                                <th class="text-gray-600 font-normal text-sm text-center">Толщина листа (свинцовый эквивалент)</th>
+                                <th class="text-gray-600 font-normal text-sm text-center">Вес листа (кг)</th>
+                                
+                            </tr> -->
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Цвет
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        серый
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Связующее
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        цемент ПЦ500-Д0
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Наполнитель
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        баритовый концентрат ГОСТ 4862-74
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Минимальная толщина слоя
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        5 мм
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Максимальная толщина слоя
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        60 мм
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Расход сухой смеси на 1 м2 при толщине слоя 10 мм
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        22–22,5 кг
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Расход воды на 1 кг сухой смеси
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        0,21–0,25 л
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Время использования
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        не более 2 ч
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Прочность раствора на сжатие через 7 сут
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        17 МПа
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Морозостойкость
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        F50
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Время высыхания (в зависимости от толщины слоя)
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        8 ч
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3 border-b border-gray-400">
+                                    Время полного набора прочности
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 border-b border-gray-400 py-3">
+                                        28 сут
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center text-xs text-gray-600 py-3">
+                                    Плотность раствора, не менее
+                                </td>
+                                <td class="px-6">
+                                    <p class="text-center text-xs text-gray-600 py-3">
+                                        2,7 г/см3
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    
+                    <div class="text-gray-700 text-sm py-8 max-w-[500px]">
+                        Для заказа изделия заполните, пожалуйста, форму и отправьте запрос. Наши менеджеры свяжутся с Вами для уточнения деталей.
+                    </div>
+                    <form class="flex flex-col space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col">
+                                <label class="text-sm mb-2">Имя и фамилия*</label>
+                                <input
+                                    type="text"
+                                    required
+                                    class="border border-gray-400 px-5 py-3 rounded-lg text-gray-600 focus:outline-none"
+                                    placeholder="Введите Ваше Имя и Фамилию"
+                                />
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-sm mb-2">Номер телефона*</label>
+                                <input
+                                    type="tel"
+                                    required
+                                    class="border border-gray-400 px-5 py-3 rounded-lg text-gray-600 focus:outline-none"
+                                    placeholder="Введите Ваше номер телефона"
+                                />
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                            <div class="flex flex-col">
+                                <label class="text-sm mb-2">Email</label>
+                                <input
+                                    type="email"
+                                    class="border border-gray-400 px-5 py-3 rounded-lg text-gray-600 focus:outline-none"
+                                    placeholder="Введите Ваш адрес электронной почты"
+                                />
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-sm mb-2">Наименование организации</label>
+                                <input
+                                    type="tel"
+                                    required
+                                    class="border border-gray-400 px-5 py-3 rounded-lg text-gray-600 focus:outline-none"
+                                    placeholder="Введите юридическое название компании"
+                                />
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-sm mb-2">Комментарий</label>
+                            <textarea
+                                rows="4"
+                                required
+                                class="border border-gray-400 px-5 py-4 rounded-lg text-gray-600 focus:outline-none"
+                                placeholder="Введите текст"
+                            ></textarea>
+                        </div>
+                        <div class="flex justify-start">
+                            <button type="submit" class="bg-[#8020DE] text-white rounded-xl px-8 py-3">
+                                Отправить запрос
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-block mt-20">
+        <div class="container-sm py-10">
+            <div class="flex flex-wrap gap-10  items-start justify-between">
+                <div class="flex flex-col space-y-6">
+                    <img src="../imgs/logo-white.png" width="160">
+                    <p class="underline text-white text-lg">Связаться с нами</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="../imgs/telegramm.svg" width="30">
+                        <img src="../imgs/watsapp.svg" width="30">
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <a href="../catalog.html" class="text-white">Каталог</a>
+                    <a href="../index.html#about" class="text-white">О компании</a>
+                    <a href="../delivery.html" class="text-white">Доставка и оплата</a>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <a href="../construction/index.html" class="text-white">Рентгенозащитные конструкции</a>
+                    <a href="../clothes/index.html" class="text-white">Рентгенозащитная одежда</a>
+                    <a href="./index.html" class="text-white">Рентгенозащитные материалы</a>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <a href="tel:+77003007212" class="text-white">+7 700 300 72 12</a>
+                    <img src="../imgs/instagramm.svg" width="30">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-gray-100 text-white px-12 py-6">
+        <div id="menu-close" class="flex justify-end p-4">
+            <button class="text-gray-800 text-5xl" onclick="toggleMenu()">
+                &times;
+            </button>
+        </div>
+        
+        <div class="flex flex-col">
+            <div class="flex flex-col space-y-6 mb-6">
+                <a href="../catalog.html" class="text-gray-700 hover:underline hover:cursor-pointer">Каталог</a>
+                <a href="../index.html#about" class="text-gray-700 hover:underline hover:cursor-pointer">О Компании</a>
+                <a href="../delivery.html" class="text-gray-700 hover:underline hover:cursor-pointer">Доставка и оплата</a>
+                <a href="../contacts.html" class="text-gray-700 hover:underline hover:cursor-pointer">Контакты</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <div class="flex items-center space-x-3 mb-2">
+                    <img src="../imgs/telegramm.svg" width="25">
+                    <img src="../imgs/watsapp.svg" width="25">
+                    <img src="../imgs/instagramm.svg" width="25">
+                </div>
+                <a class="text-sm text-black" href="tel:+77003007212">+7 700 300 72 12</a>
+                <a href="tel:+77003007212" class="bg-[#8020DE] px-8 text-white rounded-xl py-3 text-sm">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js" ></script>
+</body>
+</html>
